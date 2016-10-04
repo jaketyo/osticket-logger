@@ -7,11 +7,10 @@ class LoggerPluginConfig extends PluginConfig {
 		return array(
 			'Logger' => new SectionBreakField(array(
 				'label' => 'Logging Plugin',
-				'hint' 	=> '<<This is the hint>>',
+				'hint' 	=> 'This plugin simply takes an array containing basic ticket data and POSTs it to a URL using Curl.',
 			)),
 			'logger-url' => new TextboxField(array(
 				'label'	=> 'Logging Server URL',
-				'hint'	=> 'The URL must accept XPUT with an array containing the ticket details of the new ticket.',
 				'configuration' => array('size'=>100, 'length'=>200),
 			)),
 		);
