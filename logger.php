@@ -12,11 +12,13 @@ class LoggerPlugin extends Plugin {
 		Signal::connect('model.created', array($this, 'onTicketCreated'), 'Ticket');
 	}
 
-	function onTicketCreated($ticket){
+	function onTicketCreated($ticket) {
 		global $ost;
 
+		// Get config data
 		$logger_url	= $this->getConfig()->get('logger-url');
 
+		// Get new ticket data
 		$ticket_id = $ticket->getId();
 		$ticket_number = $ticket->getNumber();
 		$ticket_url = $ost->getConfig()->getUrl() . 'scp/tickets.php?number=' . $ticket_number;
@@ -26,7 +28,7 @@ class LoggerPlugin extends Plugin {
 //		$ticket_topic = $ticket->getTopic()->getName();
 //		$ticket_lastMessage = $ticket->getLastMessage();
 
-		// Create the payload array
+		// Create the Json-formatted payload
 		$data = "payload=" . json_encode(array(
 			"ticket_id"     => "{$ticket_id}",
             "ticket_num"    => "{$ticket_number}",
