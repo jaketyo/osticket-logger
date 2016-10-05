@@ -7,4 +7,4 @@ php:
   - hhvm
   - nightly
 
-script: phpunit --configuration Tests/phpunit.xml
+script: phpunit --configuration Tests/phpunit.xml --coverarge-text
