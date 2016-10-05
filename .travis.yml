@@ -7,4 +7,4 @@ php:
   - hhvm
   - nightly
 
-script: phpunit --configuration phpunit_$DB.xml --coverage-text
+script: phpunit --configuration Tests/phpunit.xml
