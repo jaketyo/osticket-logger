@@ -3,7 +3,7 @@
 osticket-logger is a simple plugin that uses CURL to POST ticket details to an endpoint that is configured to ingest a JSON array.
 
 ## Production State: [![Build Status](https://travis-ci.org/jaketyo/osticket-logger.svg?branch=develop)](https://travis-ci.org/jaketyo/osticket-logger)
-### NOT PRODUCTION READY!
+#### NOT PRODUCTION READY!
 
 ## osTicket Version
 This plugin was last tested on v1.10-rc.3.
