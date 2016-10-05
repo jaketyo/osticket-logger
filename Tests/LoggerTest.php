@@ -4,10 +4,9 @@ namespace Tests;
 
 class LoggerPluginTest extends \PHPUnit_Framework_TestCase
 {
-	public function testTrueIsTrue()
+	public function testSomething()
 	{
-		$foo = true;
-		$this->assertTrue($foo);
+		// Nothing to test
 	}
 }
 
