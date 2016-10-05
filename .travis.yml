@@ -7,4 +7,4 @@ php:
   - hhvm
   - nightly
 
-script: phpunit logger.php
+script: phpunit logger.php config.php plugin.php
