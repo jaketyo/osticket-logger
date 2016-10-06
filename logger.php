@@ -53,7 +53,7 @@ class LoggerPlugin extends Plugin {
 
 		// Catch Curl errors and post them in the log file
 		if ($curl_errno > 0) {
-			error_log('Slack Curl Error ' . $curl_error);
+			error_log('Curl Error ' . $curl_error);
 		}
 		else if($result != 'ok') {
 			error_log('Curl Error (Check your URL): ' . $result);
